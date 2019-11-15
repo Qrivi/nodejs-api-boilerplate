@@ -4,9 +4,13 @@
   "description": "Podcast interface for Radioplus",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node ./app/index.js",
+    "dev": "nodemon --exec babel-node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seq": "sequelize"
+    "build": "rm -rf ./out && babel -d ./out ./src -s",
+    "start": "build && node ./out/index.js",
+    "db:up": "sequelize db:migrate",
+    "db:down": "sequelize db:migrate:undo:all",
+    "sequelize": "sequelize"
   },
   "repository": {
     "type": "git",
