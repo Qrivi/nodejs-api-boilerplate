@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   const Episode = sequelize.define('Episode', {
     name: {
       type: DataTypes.STRING,
@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     createdAt: 'created_at',
-    updatedAt: 'updated_at' 
+    updatedAt: 'updated_at'
   });
 
   Episode.associate = function (models) {
