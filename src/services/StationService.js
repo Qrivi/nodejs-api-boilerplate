@@ -1,6 +1,6 @@
 import database from '../domain/models';
 
-class StationService {
+export default class StationService {
     static async getAllStations() {
         try {
             return await database.Station.findAll();
@@ -62,5 +62,3 @@ class StationService {
         }
     }
 }
-
-export default StationService;

@@ -18,6 +18,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     }
+  }, {
+    createdAt: 'created_at',
+    updatedAt: 'updated_at' 
   });
 
   Episode.associate = function (models) {

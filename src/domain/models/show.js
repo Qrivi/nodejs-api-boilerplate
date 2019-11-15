@@ -18,9 +18,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: true
     }
+  }, {
+    createdAt: 'created_at',
+    updatedAt: 'updated_at'
   });
 
-  Show.associate = function(models) {
+  Show.associate = function (models) {
     Show.belongsTo(models.Station);
   };
 

@@ -4,10 +4,9 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.addColumn(
       'Episodes',
-      'showId',
+      'show_id',
       {
         type: Sequelize.INTEGER,
-        field: 'show_id',
         allowNull: false,
         references: {
           model: 'Shows',
@@ -18,10 +17,9 @@ module.exports = {
       }
     ).then(() => queryInterface.addColumn(
       'Shows',
-      'stationId',
+      'station_id',
       {
         type: Sequelize.INTEGER,
-        field: 'station_id',
         allowNull: false,
         references: {
           model: 'Stations',

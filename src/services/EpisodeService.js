@@ -1,6 +1,7 @@
 import database from '../domain/models';
 
-class EpisodeService {
+export default class EpisodeService {
+
     static async getAllEpisodes() {
         try {
             return await database.Episode.findAll();
@@ -62,5 +63,3 @@ class EpisodeService {
         }
     }
 }
-
-export default EpisodeService;
