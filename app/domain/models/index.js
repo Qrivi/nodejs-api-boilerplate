@@ -8,7 +8,7 @@ const basename = path.basename(__filename);
 const config = configJson[env];
 const db = {};
 
-console.log('Sequelize is running in: ', env);
+console.log(`Using environment "${env}"`);
 
 let sequelize;
 if (config.environment === 'production') {
