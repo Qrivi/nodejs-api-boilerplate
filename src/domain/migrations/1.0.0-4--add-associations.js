@@ -34,10 +34,10 @@ module.exports = {
   down: (queryInterface, Sequelize) => {
     return queryInterface.removeColumn(
       'Episodes',
-      'showId'
+      'show_id'
     ).then(() => queryInterface.removeColumn(
       'Shows',
-      'stationId'
+      'station_id'
     ));
   }
 };
