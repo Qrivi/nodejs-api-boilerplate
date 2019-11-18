@@ -2,16 +2,16 @@ require('dotenv').config();
 
 module.exports = {
   development: {
-    database: 'podcastplus',
-    username: 'podcastplus',
+    database: 'boilerbase',
+    username: 'boilerbase',
     password: null,
     host: '127.0.0.1',
     dialect: 'postgres'
   },
 
   test: {
-    database: 'podcastplus_test',
-    username: 'podcastplus',
+    database: 'boilerbase_test',
+    username: 'boilerbase',
     password: null,
     host: '127.0.0.1',
     dialect: 'postgres'

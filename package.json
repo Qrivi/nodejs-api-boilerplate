@@ -1,7 +1,7 @@
 {
-  "name": "podcastplus",
+  "name": "nodejs-api-boilerplate",
   "version": "1.0.0",
-  "description": "Podcast interface for Radioplus",
+  "description": "Something someone might base something upon sometime.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node ./src/index.js",
@@ -14,18 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qrivi/podcastplus.git"
+    "url": "git+https://github.com/Qrivi/nodejs-api-boilerplate.git"
   },
   "keywords": [
-    "podcast",
-    "radio"
+    "potatoes"
   ],
   "author": "Kristof Dewilde",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Qrivi/podcastplus/issues"
+    "url": "https://github.com/Qrivi/nodejs-api-boilerplate/issues"
   },
-  "homepage": "https://github.com/Qrivi/podcastplus#readme",
+  "homepage": "https://github.com/Qrivi/nodejs-api-boilerplate#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
